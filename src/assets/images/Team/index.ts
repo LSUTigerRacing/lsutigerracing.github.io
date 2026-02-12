@@ -1,31 +1,31 @@
 // Admin
-import President from "./Admin/President.png"
-import VicePresident from "./Admin/VicePres.png"
-import Treasurer from "./Admin/Treasurer.png"
-import PublicRelations from "./Admin/PublicRelations.png"
-import Captain from "./Admin/Captain.png"
-import Powertrain from "./Admin/Powertrain.png"
-import Chassis from "./Admin/Chassis.png"
+import President from "./Admin/President.jpg"
+import VicePresident from "./Admin/VicePres.jpg"
+import Treasurer from "./Admin/Treasurer.jpg"
+import PublicRelations from "./Admin/PublicRelations.jpg"
+import Captain from "./Admin/Captain.jpg"
+import Powertrain from "./Admin/Powertrain.jpg"
+import Chassis from "./Admin/Chassis.jpg"
 import Safety from "./Admin/Safety.jpg"
 
 // Chassis
-import Frame from "./Chassis/Frame.png"
-import Aerodynamics from "./Chassis/Aerodynamics.png"
-import Suspension from "./Chassis/Suspension.png"
-import Brakes from "./Chassis/Brakes.png"
-import Ergonomics from "./Chassis/Ergonomics.png"
-import Drivetrain from "./Chassis/Drivetrain.png"
+import Frame from "./Chassis/Frame.jpg"
+import Aerodynamics from "./Chassis/Aerodynamics.jpg"
+import Suspension from "./Chassis/Suspension.jpg"
+import Brakes from "./Chassis/Brakes.jpg"
+import Ergonomics from "./Chassis/Ergonomics.jpg"
+import Drivetrain from "./Chassis/Drivetrain.jpg"
 
 // Powertrain
-import Electronics from "./Powertrain/Electronics.png"
-import Battery from "./Powertrain/Battery.png"
-import LowVoltage from "./Powertrain/LowVoltage.png"
+import Electronics from "./Powertrain/Electronics.jpg"
+import Battery from "./Powertrain/Battery.jpg"
+import LowVoltage from "./Powertrain/LowVoltage.jpg"
 import TractiveSystem from "./Powertrain/TractiveSystem.jpg"
 
 // Software
-import AppDev from "./Software/AppDev.png"
-import Embedded from "./Software/Embedded.png"
-import DAQ from "./Software/DAQ.png"
+import AppDev from "./Software/AppDev.jpg"
+import Embedded from "./Software/Embedded.jpg"
+import DAQ from "./Software/DAQ.jpg"
 
 export const AdminImages = {
   President,
