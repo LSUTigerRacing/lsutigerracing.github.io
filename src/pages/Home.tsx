@@ -5,8 +5,8 @@ import { horizontalLoop } from '../helpers/horizontalLoop';
 
 import { Link } from 'react-router-dom';
 
-import Landing from "../assets/images/Home/Landing.png";
-import Hero from "../assets/images/Home/Hero.png";
+import Landing from "../assets/images/Home/Landing.jpg";
+import Hero from "../assets/images/Home/Hero.jpg";
 
 import About from "../assets/images/Home/About.png";
 import Join from "../assets/images/Home/Join.png";
@@ -93,7 +93,7 @@ const Home = () => {
 				{/* Text Content */}
 				<div className="home-landing-tagline">
 					<h2>
-					Aiming for the forefront of electric vehicle race technology.
+					Working toward a sustainable future of electric motorsport.
 					</h2>
 				</div>
 			</div>
