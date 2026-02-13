@@ -69,7 +69,7 @@ const LandingComponent = ( props: { name: any; blurb: any; image: any } ) => {
                 <div className="subsystem-mobile-hide yellow-button">
                     <h3>Interest Form</h3>
                 </div>
-                <div></div>
+                <div></div> {/* empty div to force proper space of the explore __ on mobile */}
                 <div className="w-fit h-fit py-3 flex items-center text-right gap-4">
                     <div className="w-fit">
                         <h3 className="whitespace-nowrap text-[1.rem]">Explore {name}</h3>
