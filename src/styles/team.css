@@ -4,6 +4,12 @@
     margin-inline: auto;
 }
 
+@media (max-widtH: 475px) {
+    .team-landing {
+        padding-block: 12vh;
+    }
+}
+
 .team-redirect-img-container {
     width: 100%;
     height: 32.5vh;

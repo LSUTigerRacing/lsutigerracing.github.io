@@ -618,7 +618,7 @@ html {
 
 @media (max-width: 475px) {
     .home-landing-tagline {
-        padding-bottom: 5rem;
+        padding-bottom: 8rem;
     }
 }
 
@@ -1336,6 +1336,12 @@ html {
     width: var(--default-width);
     padding-block: 16vh;
     margin-inline: auto;
+}
+
+@media (max-widtH: 475px) {
+    .team-landing {
+        padding-block: 12vh;
+    }
 }
 
 .team-redirect-img-container {
