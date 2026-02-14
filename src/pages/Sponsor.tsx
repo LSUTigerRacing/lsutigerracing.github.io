@@ -6,6 +6,7 @@ import Landing from "../assets/images/Sponsor/Landing.png";
 import WhyPartner from "../assets/images/Sponsor/WhyPartner.png";
 
 import { ICImages } from "../assets/images/Cars/"
+import { SponsorIcons } from '../assets/images/Sponsor/Icons';
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -145,6 +146,75 @@ const Sponsor = () => {
                 />
             </div>
         </section>
+        <div className='purple-line mt-24'/>
+        <section className='w-[var(--default-width)] m-auto py-8'>
+            <h2>Our Sponsors</h2>
+            <section className='mt-10'>
+                <h3>Platinum</h3>
+                <div className='flex gap-16 flex-wrap'>
+                    <SponsorIcon
+                        image={SponsorIcons.BASF}
+                        to="https://www.basf.com/"
+                    />
+                </div>
+
+            </section>
+            <section className='mt-10'>
+                <h3>Gold</h3>
+                <div className='flex gap-16 flex-wrap'>
+                    <SponsorIcon
+                        image={SponsorIcons.CollisionSolutions}
+                        to="https://www.collision-solutions.com"
+                    />
+                    <SponsorIcon
+                        image={SponsorIcons.Kenesto}
+                        to="https://www.kenesto.com"
+                    />
+                    <SponsorIcon
+                        image={SponsorIcons.Solidworks}
+                        to="https://www.solidworks.com"
+                    />
+                    <SponsorIcon
+                        image={SponsorIcons.Wurth}
+                        to="https://wurthtool.com"
+                    />
+                    
+                </div>
+            </section>
+
+            <section className='mt-10'>
+                <h3>Silver</h3>
+                <div className='flex flex-wrap gap-16'>
+
+                    <SponsorIcon
+                        image={SponsorIcons.Automotive360}
+                        to="https://www.360autobr.com"
+                    />
+                    <SponsorIcon
+                        image={SponsorIcons.Acuity}
+                        to="https://acuityinstruments.com"
+                    />
+                    <SponsorIcon
+                        image={SponsorIcons.CompositeEnvisions}
+                        to="https://www.compositeenvisions.com"
+                    />
+                    <SponsorIcon
+                        image={SponsorIcons.Exxon}
+                        to="https://corporate.exxonmobil.com"
+                    />
+                </div>
+            </section>
+
+            <section className='mt-10'>
+                <h3>Bronze</h3>
+                <div className='flex gap-16 flex-wrap '>
+                    <SponsorIcon
+                        image={SponsorIcons.EssexParts}
+                        to="https://www.essexparts.com"
+                    />
+                </div>
+            </section>
+        </section>
     </div>
   );
 };
@@ -169,5 +239,24 @@ const Tier = ( props: { image: any; title: any; description: any; extra: any; } 
             <p className="ml-[3%] mb-[2%] whitespace-pre-line">{description}</p>
             <h4 className='ml-[3%] '>{extra}</h4>
         </div>
+    )
+}
+
+const SponsorIcon = ( props: { image: any; to: any; } ) => {
+    const {
+        image,
+        to,
+    } = props;
+    return (
+        <a 
+            href={to}
+            target="_blank"
+            className="p-4"
+        >
+            <img
+                src={image}
+                className="max-w-[20rem] max-h-[30vh] object-contain mb-[2%]"
+            />
+        </a>
     )
 }
