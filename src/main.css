@@ -138,8 +138,104 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;  
-} 
+}
 
+.car-page-landing-content {
+    width: var(--default-width);
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: end;
+
+    margin-inline: auto;
+}
+
+/* @media (max-width: 475px) {
+    .car-page-landing-content {
+        flex-direction: column;
+    }
+} */
+
+.car-page-stats {
+    min-width: 22.5%;
+    width: fit-content;
+    height: 50%;
+ 
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+    padding: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .car-page-stats {
+        min-width: 36%;
+    }
+}
+
+@media (max-width: 475px) {
+    .car-page-stats {
+        min-width: 50%;
+        margin-right: 0;
+        margin-bottom: 3rem
+    }
+}
+
+.car-page-performance-container {
+    width: 100%;
+    
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 475px) {
+    .car-page-performance-container {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+}
+
+.car-page-team-photo {
+    width: 100%;
+    height: 100vh;
+
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .car-page-team-photo {
+        height: 100%;
+        object-fit: scale-down;
+    }
+}
+
+.car-page-2014-team {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4rem;
+}
+
+@media (max-width: 800px) {
+    .car-page-2014-team {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+.car-page-2015-team {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 800px) {
+    .car-page-2015-team {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 .car-overlay {
     width: 100%;
     height: 100%;
@@ -1127,7 +1223,6 @@ html {
     color: black;
     padding: 1rem;
 }
-
 
 
 

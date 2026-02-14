@@ -36,12 +36,12 @@ const CarPage = () => {
 			<div className="car-single-landing">
 				<img src={carData.landingPhoto || carData.carPhoto} alt={`${year} car`} />
 				<div className="car-overlay">
-					<div className="w-[var(--default-width)] mx-auto flex justify-between items-end ">
+					<div className="car-page-landing-content">
 						<span className="mb-16" id="landing-text">
 							<p className="text-[1.4rem]!">{carData.name}</p>
 							<h2 className="leading-12">{year}</h2>
 						</span>
-						<div className="min-w-[22.5%] w-fit h-[50%] bg-black/50 mb-16 p-6 mr-8" id="stats">
+						<div className="car-page-stats" id="stats">
 							<h2 className="mb-4">Stats</h2>
 							{carData.specs?.map((content, idx) => (
 								<p className="mb-1">{content}</p>
@@ -54,12 +54,12 @@ const CarPage = () => {
 			<div className= {`${carData.performance ? "" : "hidden"} w-full background`}>
 				<div className="w-[var(--default-width)] py-16 mx-auto">
 					<h2>Performance</h2>
-					<div className="w-full flex gap-8">
+					<div className="car-page-performance-container">
 						{carData.performance?.map((statistic, idx) => (
 							<div className="flex-1 bg-white p-8 mt-8 text-black">
 								<h2 className="mb-4">{statistic[0]}</h2>
-
-								{statistic.slice(1).map((stat, statIdx) => (
+								<h3>{statistic[1]}</h3>
+								{statistic.slice(2).map((stat, statIdx) => (
 									<p>{stat}</p>
 								))}
 							</div>
@@ -68,7 +68,7 @@ const CarPage = () => {
 				</div>
 			</div>
 
-			<img className={`${carData.teamPhoto? "" : "hidden"} w-full h-screen object-cover`} src={carData.teamPhoto}/>
+			<img className={`${carData.teamPhoto? "" : "hidden"} car-page-team-photo`} src={carData.teamPhoto}/>
 			<div className={`${(carData.layout === 3) ? "hidden" : ""} ${carData.teamLeads? "" : "hidden"} w-fit mx-auto my-8 grid grid-cols-2 justify-between`}>
 				{carData.teamLeads?.map((member, idx) => (
 					<div key={idx}>
@@ -78,7 +78,7 @@ const CarPage = () => {
 			</div>
 			<div className={`${(carData.layout === 3) ? "" : "hidden"} w-[var(--default-width)] mx-auto my-8 text-black text-center`}>
 				<h2>The Team</h2>
-				<div className={`${(carData.layout === 3) ? "" : "hidden"} ${carData.teamLeads? "" : "hidden"} grid ${year === "2014" ? "grid-cols-4 gap-16": "grid-cols-3 gap-4"} my-8`}>
+				<div className={`${(carData.layout === 3) ? "" : "hidden"} ${carData.teamLeads? "" : "hidden"} ${year === "2014" ? "car-page-2014-team": "car-page-2015-team"} my-8`}>
 					{carData.teamLeads?.map((member, idx) => (
 						<div key={idx} className='w-full h-fit'>
 							<img
@@ -90,8 +90,6 @@ const CarPage = () => {
 					))}
 				</div>
 			</div>
-
-			
 
 			<div className={`${carData.teamMembers ? "" : "hidden"} w-[80%] mx-auto mb-16 grid grid-cols-3 justify-between`}>
 				{carData.teamMembers?.map((member, idx) => (
