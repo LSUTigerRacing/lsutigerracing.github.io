@@ -147,7 +147,7 @@ const Sponsor = () => {
             </div>
         </section>
         <div className='purple-line mt-24'/>
-        <section className='w-[var(--default-width)] m-auto py-8'>
+        <section className='w-[90%] m-auto py-8'>
             <h2>Our Sponsors</h2>
             <section className='mt-10'>
                 <h3>Platinum</h3>
