@@ -48,4 +48,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;  
+    
+    transition: all 0.3s ease;  
+
+} 
+
+
+.car-box:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease;  
 } 

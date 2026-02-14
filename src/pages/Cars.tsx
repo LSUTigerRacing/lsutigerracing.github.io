@@ -234,10 +234,8 @@ const CarBox = ( props: { name: any, year: any, type: any, image: any } ) => {
 						<p>{name}</p>
 						<h3 className="leading-6">{year}</h3>
 					</span>
-
 					<h2>{type}</h2>
 				</div>
-
 			</div>
         </Link>
     )
