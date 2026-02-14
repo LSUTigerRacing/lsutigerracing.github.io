@@ -2,9 +2,9 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Logo from "../assets/images/General/tigerracing-logo-purple.png";
 
@@ -13,6 +13,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navmenuRef = useRef<HTMLDivElement>(null);
+    const location = useLocation();
 
     // reset menu open whenever window gets bigger
     useEffect(() => {
@@ -24,6 +26,27 @@ export const Navbar = () => {
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
+    }, [menuOpen]);
+
+    // close menu on redirect
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location]);
+
+    //close menu on mouse out
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (menuOpen && navmenuRef.current && !navmenuRef.current.contains(event.target as Node)) {
+                // Also check if click is not on the menu button
+                const menuButton = document.querySelector('.navmenu-vis.navbar-purple-button');
+                if (menuButton && !menuButton.contains(event.target as Node)) {
+                    setMenuOpen(false);
+                }
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
     }, [menuOpen]);
 
     function toggleMenu() {
@@ -92,7 +115,7 @@ export const Navbar = () => {
                 </div>
             </div>
         
-            <div id="navmenu" className={`navmenu-vis ${menuOpen ? "opacity-100" : "opacity-0" } fixed h-fit w-[400px] bg-[#E6E1E7] left-[50%] -translate-x-1/2 rounded-b-[36px] top-[8%] max-[475px]:top-[6%] z-9`}>
+            <div ref={navmenuRef} id="navmenu" className={`navmenu-vis ${menuOpen ? "opacity-100" : "opacity-0" } fixed h-fit w-[400px] bg-[#E6E1E7] left-[50%] -translate-x-1/2 rounded-b-[36px] top-[8%] max-[475px]:top-[6%] z-9`}>
                 <div className={`w-[90%] h-fit flex flex-col justify-between mx-auto pt-10 pb-6`}>
                     <div className={`${menuOpen ? "" : "hidden" } pt-8 pb-4`}>
                         <h4 className='text-[#595959]'>Explore</h4>
