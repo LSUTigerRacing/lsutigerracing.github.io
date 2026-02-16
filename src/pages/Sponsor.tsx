@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/all';
 import Landing from "../assets/images/Sponsor/Landing.png";
 import WhyPartner from "../assets/images/Sponsor/WhyPartner.png";
 
+import SponsorshipPacket from "../assets/documents/Sponsorship-Packet-25-26.pdf"
+
 import { ICImages } from "../assets/images/Cars/"
 import { SponsorIcons } from '../assets/images/Sponsor/Icons';
 
@@ -52,7 +54,10 @@ const Sponsor = () => {
                 </p>
 
                 <div className="default-vis yellow-button white-landing-button mt-6">
-                    <h3>Sponsorship Packet</h3>
+                    <a href={SponsorshipPacket} target='_blank'>
+                        <h3>Sponsorship Packet</h3>
+                        
+                    </a>
                 </div>
             </div>
             <div className="white-landing-img-container">
@@ -146,6 +151,11 @@ const Sponsor = () => {
                 />
             </div>
         </section>
+        
+        {/* <section>
+            <h2>Interested?</h2>
+        </section> */}
+
         <div className='purple-line mt-24'/>
         <section className='w-[90%] m-auto py-8'>
             <h2>Our Sponsors</h2>
