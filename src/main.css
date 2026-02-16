@@ -1233,8 +1233,25 @@ html {
     padding: 1rem;
 }
 
+.sponsor-logo {
+    max-width: 20rem;
+    max-height: 30vh;
 
+    object-fit: contain;
+    
+    margin-bottom: 2%;
+}
 
+@media (max-width: 800px) {
+    .sponsor-logo {
+        max-width: 15rem;
+        max-height: 30vh;
+
+        object-fit: contain;
+        
+        margin-bottom: 2%;
+    }
+}
 @media (max-width: 475px) {
     .subsystem-mobile-hide {
         display: none

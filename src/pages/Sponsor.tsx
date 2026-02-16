@@ -255,7 +255,7 @@ const SponsorIcon = ( props: { image: any; to: any; } ) => {
         >
             <img
                 src={image}
-                className="max-w-[20rem] max-h-[30vh] object-contain mb-[2%]"
+                className="sponsor-logo"
             />
         </a>
     )
