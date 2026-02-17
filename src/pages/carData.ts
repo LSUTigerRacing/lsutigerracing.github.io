@@ -95,6 +95,7 @@ export const carsData: Record<string, CarData> = {
     "2020-2021": {
         year: "2020-2021",
         name: "Chloe",
+        landingPhoto: LandingICImages.Landing2021,
         carPhoto: ICImages.y2021,
         specs: [
             "Weight: 431 lbs", "Wheelbase: 60.5 in", "Engine: Yamaha YZF-R6", "Power: 84 WHP", "Torque: 43 lb/ft", "Tires: Hoosier LC0", "Wheels: 10” Keizer", "Data: AIM EVO5"
@@ -264,10 +265,10 @@ export const carsData: Record<string, CarData> = {
     "2014": {
         year: "2014",
         name: "Emily",
-        // landingPhoto: LandingICImages.Landing2014, this current picture is too blurry
+        landingPhoto: LandingICImages.Landing2014,
         carPhoto: ICImages.y2014,
         specs: [
-            "Weight: 499 lbs", "Wheelbase: 61 in", "Engine: K6 Suzuki G5XR", "Power: 66 WHP", "Torque: 25 lb/ft", "Tires: Hoosier 13\"", "Wheels: Keizer Mag/Alumnimum", "Data: PE3 ECU, AIM EVO4 & G-Dash"
+            "Weight: 499 lbs", "Wheelbase: 61 in", "Engine: K6 Suzuki G5XR", "Power: 66 WHP", "Torque: 25 lb/ft", "Tires: Hoosier 13\"", "Wheels: Keizer Mag/Aluminum", "Data: PE3 ECU, AIM EVO4 & G-Dash"
         ],
         performance: [
             ["Results: Michigan", "Overall: 40th/120", "Endurance: 35th", "Fuel Efficiency: 37th", "Skidpad: 44th", "Autocross: 51st", "Acceleration: 42nd", "Design: 38th", "Business: 22nd", "Cost: 72nd", "Points: 409.7/1000"],
@@ -314,7 +315,12 @@ export const carsData: Record<string, CarData> = {
         ],
         performance: [
             ["Results: Michigan", "Overall: 73rd/120", "Endurance: DNF", "Autocross: 46th", "Skidpad: 49th", "Acceleration: 43rd", "Design: 63rd", "Business: 103rd", "Cost: 103rd", "Points: 240.3/1000"]
-        ]
+        ],
+        teamPhoto: OldTeamImages.y2013,
+        teamLeads : [{ role: "", name: ""}],
+        teamMembers: [
+            "Luke Dodge", "Frank Duvic", "Joe Hollier", "Simon Shirazi", "Kody Deslatte"
+        ],
     },
     "2012": {
         year: "2012",
@@ -348,7 +354,7 @@ export const carsData: Record<string, CarData> = {
         performance: [
             ["Results: Michigan", "Overall: 83rd/122", "Endurance: DNF", "Autocross: DNF", "Skidpad: DNF", "Acceleration: DNF", "Design: 1 pt", "Business: 36.8 pts", "Cost: 71.9 pts", "Points: 109.7/1000"]
         ],
-        // teamPhoto: OldTeamImages.y2009 doesn't fit too well, TODO edit down later
+        teamPhoto: OldTeamImages.y2009
     },
     "2007-2008": {
         year: "2007-2008",
@@ -383,5 +389,8 @@ export const carsData: Record<string, CarData> = {
         year: "1983",
         name: "⠀",
         carPhoto: PreClubImages.y1983,
+        performance: [
+            ["Results: UT Arlington Autocross Shootout", "Overall: 4th"]
+        ]
     }
 }

@@ -26,12 +26,13 @@ import FirstCar from "./Small/1983.png"
 
 
 // Landing IC
+import LandingIC2021 from "./Landing/2021.jpg"
 import LandingIC2019 from "./Landing/2019.jpg"
 import LandingIC2018 from "./Landing/2018.jpg"
 import LandingIC2017 from "./Landing/2017.jpeg"
 import LandingIC2016 from "./Landing/2016.jpg"
 import LandingIC2015 from "./Landing/2015.jpg"
-import LandingIC2014 from "./Landing/2014.png"
+import LandingIC2014 from "./Landing/2014.jpg"
 import LandingIC2013 from "./Landing/2013.jpg"
 
 export const EVImages = {
@@ -66,6 +67,7 @@ export const LandingEVImages = {
 }
 
 export const LandingICImages = {
+    Landing2021: LandingIC2021,
     Landing2019: LandingIC2019,
     Landing2018: LandingIC2018,
     Landing2017: LandingIC2017,
