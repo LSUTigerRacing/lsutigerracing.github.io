@@ -17,7 +17,7 @@ interface CarData {
     teamPhoto?: string;
     teamLeads?: TeamLead[]; // for layout 3, use teamleads to show pictures of everyone
     teamMembers?: string[];
-    layout? : number; // 1 is for lead portraits, 2 is for names only, 3 is for everyone has portraits
+    layout? : number; // 1 is for lead portraits (2026 and on), 2 is for names only (2023-2016), 3 is for everyone has portraits (2014-2015)
 }
 
 export const carsData: Record<string, CarData> = {

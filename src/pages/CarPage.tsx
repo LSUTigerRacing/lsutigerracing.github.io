@@ -69,34 +69,51 @@ const CarPage = () => {
 			</div>
 
 			<img className={`${carData.teamPhoto? "" : "hidden"} car-page-team-photo`} src={carData.teamPhoto}/>
-			<div className={`${(carData.layout === 3) ? "hidden" : ""} ${carData.teamLeads? "" : "hidden"} w-fit mx-auto my-8 grid grid-cols-2 justify-between`}>
-				{carData.teamLeads?.map((member, idx) => (
-					<div key={idx}>
-						<h3 className="text-black text-[1.3rem] px-5">{member.role}: {member.name}</h3>
-					</div>
-				))}
-			</div>
-			<div className={`${(carData.layout === 3) ? "" : "hidden"} w-[var(--default-width)] mx-auto my-8 text-black text-center`}>
-				<h2>The Team</h2>
-				<div className={`${(carData.layout === 3) ? "" : "hidden"} ${carData.teamLeads? "" : "hidden"} ${year === "2014" ? "car-page-2014-team": "car-page-2015-team"} my-8`}>
+			
+			{/* LAYOUT 2 team leads */}
+			<div className={`${(carData.layout === 2) ? "" : "hidden"}`}>
+				<h3 className='text-black text-center mt-16'>Team Leads</h3>
+
+				<div className={`${carData.teamLeads? "" : "hidden"} w-[80%] ml-[15vw] max-[800px]:ml-[12.5vw] max-[800px]:ml-[10vw] my-8 grid grid-cols-3 justify-between`}
+				>
 					{carData.teamLeads?.map((member, idx) => (
-						<div key={idx} className='w-full h-fit'>
-							<img
-								src={member.image}
-								className="w-full h-full object-cover"
-							/>
-							<h3 className="text-black text-[1.3rem] text-center">{member.name}{member.role ? `,` : ""} {member.role}</h3>
+						<div key={idx} className="w-full text-black mb-4">
+							<h3 className='text-[1.6rem]! mb-1'>{member.role}</h3>
+							<p className='text-[1.3rem]!'>{member.name}</p>
 						</div>
 					))}
 				</div>
 			</div>
 
-			<div className={`${carData.teamMembers ? "" : "hidden"} w-[80%] mx-auto mb-16 grid grid-cols-3 justify-between`}>
-				{carData.teamMembers?.map((member, idx) => (
-					<div className="w-full text-center " key={idx}>
-						<p className="text-black text-[1.3rem]">{member}</p>
+			{/* LAYOUT 3 team leads*/}
+
+			<div className={`${(carData.layout === 3) ? "" : "hidden"}`}>
+				<div className={`w-[var(--default-width)] mx-auto my-8 text-black text-center`}>
+					<h2>The Team</h2>
+					<div className={`${(carData.layout === 3) ? "" : "hidden"} ${carData.teamLeads? "" : "hidden"} ${year === "2014" ? "car-page-2014-team": "car-page-2015-team"} my-8`}>
+						{carData.teamLeads?.map((member, idx) => (
+							<div key={idx} className='w-full h-fit'>
+								<img
+									src={member.image}
+									className="w-full h-full object-cover"
+								/>
+								<h3 className="text-black text-[1.3rem] text-center">{member.name}{member.role ? `,` : ""} {member.role}</h3>
+							</div>
+						))}
 					</div>
-				))}
+				</div>
+			</div>
+			<div className={`${carData.teamMembers ? "" : "hidden"} white-line`}/>
+			
+			<div className={`${carData.teamMembers ? "" : "hidden"} w-[80%] mx-auto`}>
+				<h3 className='text-black text-center mt-16 mb-8'>Team Members</h3>
+				<div className={`mb-16 grid grid-cols-3 max-[600px]:grid-cols-2 justify-between`}>
+					{carData.teamMembers?.map((member, idx) => (
+						<div className="w-full text-center " key={idx}>
+							<p className="text-black text-[1.3rem]">{member}</p>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 
