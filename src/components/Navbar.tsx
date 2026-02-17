@@ -115,8 +115,8 @@ export const Navbar = () => {
                 </div>
             </div>
         
-            <div ref={navmenuRef} id="navmenu" className={`navmenu-vis ${menuOpen ? "opacity-100" : "opacity-0" } fixed h-fit w-[400px] bg-[#E6E1E7] left-[50%] -translate-x-1/2 rounded-b-[36px] top-[8%] max-[475px]:top-[6%] z-9`}>
-                <div className={`w-[90%] h-fit flex flex-col justify-between mx-auto pt-10 pb-6`}>
+            <div ref={navmenuRef} id="navmenu" className={`navmenu-vis ${menuOpen ? "opacity-100" : "opacity-0" } fixed h-fit w-[400px] max-[420px]:w-[350px] bg-[#E6E1E7] left-[50%] -translate-x-1/2 rounded-b-[36px] top-[8%] max-[475px]:top-[6%] z-9`}>
+                <div className={`w-[90%] h-fit flex flex-col justify-between mx-auto pt-[10px] pb-6 max-[475px]:pt-[20px]`}>
                     <div className={`${menuOpen ? "" : "hidden" } pt-8 pb-4`}>
                         <h4 className='text-[#595959]'>Explore</h4>
                         <Link 
