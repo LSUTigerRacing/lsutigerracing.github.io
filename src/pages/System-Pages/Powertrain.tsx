@@ -33,8 +33,8 @@ const Powertrain = () => {
             index="02"
             title="Battery"
             description="Powering an electric race car requires more than just connecting cells together. Our battery team designs and assembles the high-voltage energy storage system from the ground up, working with cutting-edge lithium-ion cell technology to create custom battery management systems that monitor cell health, balance charge levels, and ensure safe operation under extreme racing conditions. Members gain hands-on experience with thermal management solutions, electrical protection schemes, and rigorous safety testing protocols. From cell selection and characterization to pack assembly and Formula SAE compliance, every decision involves balancing competing demands of energy density, power delivery, and weight optimization."
-            images={[TempPicture, TempPicture, TempPicture]} 
-            layout={2}
+            images={[PowertrainImages.Battery.Modules, PowertrainImages.Battery.Yianni]} 
+            layout={4}
         />
         <SubsystemComponent
             index="03"
@@ -47,8 +47,8 @@ const Powertrain = () => {
             index="04"
             title="Tractive System"
             description="Converting electrical energy into motion is where theory meets asphalt. Our tractive system team manages everything from motor selection and inverter configuration to drivetrain integration and thermal management, working with high-performance electric motors and controllers to optimize torque delivery and efficiency across the entire operating range. Members gain deep experience with power electronics, motor control algorithms, cooling system design, and performance characterization through dynamometer testing. Understanding both electrical and mechanical domains is essential, making this an ideal area for anyone interested in electromechanical systems integration and the physics of how cars actually accelerate."
-            images={[TempPicture, TempPicture, TempPicture]} 
-            layout={2}
+            images={[PowertrainImages.TractiveSystem.VoltageTaps, PowertrainImages.TractiveSystem.BatteryTopBuild, PowertrainImages.TractiveSystem.Battery]} 
+            layout={1}
         />
     </div>
   );

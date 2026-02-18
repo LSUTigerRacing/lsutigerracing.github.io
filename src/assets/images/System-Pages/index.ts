@@ -15,10 +15,19 @@ import Backwing from "./Chassis/Aerodynamics/backwing.png"
 
 // Powertrain
 import PowertrainLanding from "./Powertrain/Landing.jpg"
+
 import PCB from "./Powertrain/Electronics/PCB.png"
 import Soldering from "./Powertrain/Electronics/GuysWorking.jpg"
+
 import VCU from "./Powertrain/LowVoltage/VCU.png"
 import Wiring from "./Powertrain/LowVoltage/Wires.png"
+
+import Modules from "./Powertrain/Battery/Modules.jpg"
+import Yianni from "./Powertrain/Battery/Yianni.jpg"
+
+import VoltageTaps from "./Powertrain/TractiveSystem/VoltageTaps.jpg"
+import BatteryTopBuild from "./Powertrain/TractiveSystem/BatteryTopBuild.jpg"
+import Battery from "./Powertrain/TractiveSystem/BatteryTop.jpg"
 
 // Business
 import Financial from "./Business/Financial.png"
@@ -61,10 +70,13 @@ export const PowertrainImages = {
     },
 
     Battery: {
-
+        Modules,
+        Yianni
     },
     TractiveSystem: {
-
+        VoltageTaps,
+        BatteryTopBuild,
+        Battery
     },
     LowVoltage: {
         VCU,
