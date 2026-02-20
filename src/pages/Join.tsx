@@ -58,7 +58,7 @@ const Join = () => {
 			paused: false,
 			dragToScroll: true,
 			invalidateOnRefresh: true,
-			paddingRight: 45
+			paddingRight: 30
 		});
         
         gsap.from(".join-systems-box", {
@@ -119,20 +119,23 @@ const Join = () => {
                 />
             </div>
         </section>
-        <div className="white-line mt-20 mb-10"/>
+        <div className="white-line mt-20 mb-6"/>
         <div className='join-loop-bar-container'>
             <div className='join-loop-bar'>
-                <div className='join-loop-img'><img src={CollageLoop.Collage1}/></div>
-                <div className='join-loop-img'><img src={CollageLoop.Collage2}/></div>
-                <div className='join-loop-img'><img src={CollageLoop.Collage3}/></div>
                 <div className='join-loop-img'><img src={CollageLoop.Collage4}/></div>
-                <div className='join-loop-img'><img src={CollageLoop.Collage5}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage2}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage9}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage11}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage1}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage8}/></div>
                 <div className='join-loop-img'><img src={CollageLoop.Collage6}/></div>
-                <div className='join-loop-img'><img src={CollageLoop.Collage7}/></div>
+
+                <div className='join-loop-img'><img src={CollageLoop.Collage5}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage10}/></div>
             </div>
         </div>
 
-        <div className="white-line mt-10 mb-20"/>
+        <div className="white-line mt-6 mb-20"/>
         <section className="w-[90%] mx-auto">
             <h2>Our Systems</h2>
 
