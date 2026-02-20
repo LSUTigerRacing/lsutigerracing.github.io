@@ -36,6 +36,39 @@
 	}
 }
 
+.join-loop-bar-container {
+	width: 100%;
+
+    overflow: hidden;
+}
+
+.join-loop-bar {
+	width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    overflow: hidden;
+    padding-block: 0rem;
+	/* background: #000; */
+}
+
+.join-loop-bar > * {
+	min-width: 25vw;
+    max-width: 40vw;
+    max-height: 50vh;
+
+}
+
+.join-loop-bar > * > * {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .systems-container {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);

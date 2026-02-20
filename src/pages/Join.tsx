@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
+import { horizontalLoop } from "../helpers/horizontalLoop";
 
 import Collage_1 from "../assets/images/Join/Collage_1.png";
 import Collage_2 from "../assets/images/Join/Collage_2.png";
 import Collage_3 from "../assets/images/Join/Collage_3.png";
+
+import { CollageLoop } from "../assets/images/Join";
 
 import Right_Arrow from "../assets/images/Join/join-right-arrow.png"
 
@@ -46,6 +49,17 @@ const Join = () => {
 				// markers: true
 			}
 		})
+
+        const logos = gsap.utils.toArray<HTMLElement>('.join-loop-img');
+
+		const loop = horizontalLoop(logos, {
+			repeat: -1,
+			speed: 0.8,
+			paused: false,
+			dragToScroll: true,
+			invalidateOnRefresh: true,
+			paddingRight: 45
+		});
         
         gsap.from(".join-systems-box", {
             opacity: 0,
@@ -80,12 +94,12 @@ const Join = () => {
             <div className="join-blurb-content">
                 <h2 className="seperator-bottom-sm">Why Join?</h2>
                 <p>We welcome LSU students of all majors and experience levels who share our passion for pushing the boundaries of electric vehicle technology. Whether you're a freshman with zero experience or a senior looking to apply your knowledge, there's a place for you on our team.
-<br/><br/>
+                <br/><br/>
                 FSAE offers hands-on experience you simply can't get in the classroom. You'll gain practical skills in areas like PCB design, composite manufacturing, and race car dynamics that aren't part of LSU's standard curriculum but are highly valued in the automotive and motorsports industries. From CAD modeling and finite element analysis to battery management systems and motor controller programming, you'll work with the same tools and technologies used by leading companies like Tesla, Rivian, and Formula 1 teams.
-<br/><br/>
+                <br/><br/>
 
                 Our alumni have gone on to positions at top engineering firms, and recruiters actively seek out FSAE members for their proven ability to deliver real results under pressure. The community here is special. Late nights in the shop, the thrill of competition, and the pride of seeing something you built with your own hands perform on the track create bonds that last well beyond graduation.
-<br/><br/>
+                <br/><br/>
                 </p>
             </div>
             <div className="join-blurb-collage">
@@ -104,9 +118,21 @@ const Join = () => {
                     className="collage-item w-[50%] object-cover flex-1"
                 />
             </div>
-                
         </section>
-        <div className="white-line my-20"/>
+        <div className="white-line mt-20 mb-10"/>
+        <div className='join-loop-bar-container'>
+            <div className='join-loop-bar'>
+                <div className='join-loop-img'><img src={CollageLoop.Collage1}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage2}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage3}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage4}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage5}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage6}/></div>
+                <div className='join-loop-img'><img src={CollageLoop.Collage7}/></div>
+            </div>
+        </div>
+
+        <div className="white-line mt-10 mb-20"/>
         <section className="w-[90%] mx-auto">
             <h2>Our Systems</h2>
 
