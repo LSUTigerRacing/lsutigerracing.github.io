@@ -171,11 +171,11 @@ const Team = () => {
                     name="Nick Fortie"
                 />
                 <Portrait
-                    to="https://www.linkedin.com/in/brady-vidrine-113a75279/"
-                    email="bvidr16@lsu.edu"
+                    to="https://www.linkedin.com/in/robert-gruse-892a59309/"
+                    email="rgruse1@lsu.edu"
                     image={ChassisImages.Aerodynamics}
                     title="Aerodynamics"
-                    name="Robert Grusch"
+                    name="Robert Gruse"
                 />
                 <Portrait
                     to="/team/member1"
