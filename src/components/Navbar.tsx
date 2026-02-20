@@ -100,10 +100,15 @@ export const Navbar = () => {
                     </div>
 
                     <div className="flex flex-row gap-4">
-                        <div className="navbar-vis text-(--standard-purple) border-1 border-[var(--standard-purple)] rounded-4xl px-4 py-2 ml-4">
+                        <a className="navbar-vis text-(--standard-purple) border-1 border-[var(--standard-purple)] rounded-4xl px-4 py-2 ml-4"
+                            href={'https://app.formulalsu.org'}
+                            target='_blank'
+                        >
                             <h4>Login</h4>
-                        </div>
-                        <a className="navbar-vis navbar-purple-button" href={`mailto:FormulaLSU@gmail.com`} target="_blank">
+                        </a>
+                        <a className="navbar-vis navbar-purple-button" 
+                            href={`mailto:FormulaLSU@gmail.com`} 
+                            target="_blank">
                             <h4>Contact Us</h4>
                         </a>
                         <button 
@@ -165,12 +170,18 @@ export const Navbar = () => {
                     </div>
  
                     <div className={`${menuOpen ? "" : "hidden" } flex justify-between`}>
-                        <div className="navmenu-vis text-(--standard-purple) border-1 border-[var(--standard-purple)] rounded-4xl px-6 py-2">
+                        <a className="navmenu-vis text-(--standard-purple) border-1 border-[var(--standard-purple)] rounded-4xl px-6 py-2"
+                            href={'https://app.formulalsu.org'}
+                            target='_blank'
+                        >
                             <h4 className='text-[1.1rem]! max-[475px]:text-[1.4rem]!'>Login</h4>
-                        </div>
-                        <div className="navmenu-vis navbar-purple-button">
+                        </a>
+                        <a className="navmenu-vis navbar-purple-button"
+                            href={`mailto:FormulaLSU@gmail.com`} 
+                            target="_blank"
+                        >
                             <h4 className='text-[1.1rem]! max-[475px]:text-[1.4rem]!'>Contact Us</h4>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

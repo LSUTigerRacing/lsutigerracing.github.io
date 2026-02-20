@@ -165,7 +165,6 @@ const Join = () => {
                     title="Public Relations"
                     description="Our public relations system builds our brand and community through marketing campaigns and fundraising initiatives. If you enjoy content creation, event planning, social media strategy, or connecting people to our mission, Public Relations is for you"
                 />
-
             </div>
         </section>
     </div>
