@@ -188,20 +188,20 @@
 
 .home-end-section {
     width: var(--wide-width);
-    height: 50vh;
+    height: 25rem;
     
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
 
-    margin-block: 3.5rem;
+    margin-top: 10rem;
     margin-inline: auto;
 
-    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 @media (max-width: 600px) {
     .home-end-section {
-        height: 60vh;
+        height: 70vh;
         gap: 2rem;
 
         flex-direction: column;
