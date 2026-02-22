@@ -5,6 +5,8 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
 import { horizontalLoop } from "../helpers/horizontalLoop";
 
+import { SEO } from "../components/SEO.tsx"
+
 import Collage_1 from "../assets/images/Join/Collage_1.png";
 import Collage_2 from "../assets/images/Join/Collage_2.png";
 import Collage_3 from "../assets/images/Join/Collage_3.png";
@@ -77,6 +79,10 @@ const Join = () => {
 
   return (
     <div className="w-full background text-black! bg-white!">
+        <SEO
+            title="TigerRacing | Join us"
+        />
+
         <section className="purple-landing flex-col! justify-normal! gap-8" ref={landingRef}>
             <div className="max-w-[80%] max-[475px]:max-w-[var(--default-width)] text-center mx-auto" id="join-landing-phrase">
                 <h2>Join one of LSU’s oldest and largest engineering organizations.</h2>
