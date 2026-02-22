@@ -254,7 +254,7 @@ const Collage2Left = ( props: { images: any }) => {
 const CollageSingle = ( props: { images: any }) => {
     const { images } = props;
     return (
-        <div className="subsystem-collage collage-1-single">
+        <div className="collage-1-single">
             <img
                 src={images[0]}
             />

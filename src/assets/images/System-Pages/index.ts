@@ -13,6 +13,10 @@ import WorkingOnAirshock from "./Chassis/Suspension/WorkingOnShock.png"
 import HoldingWing from "./Chassis/Aerodynamics/HoldingWing.png"
 import Backwing from "./Chassis/Aerodynamics/backwing.png"
 
+import SandingErgo from "./Chassis/Ergonomics/sanding.jpg"
+import Jig from "./Chassis/Ergonomics/Jig.jpg"
+
+
 // Powertrain
 import PowertrainLanding from "./Powertrain/Landing.jpg"
 
@@ -41,6 +45,16 @@ import Concessions from "./PublicRelations/Concessions.png"
 import Merch from "./PublicRelations/Merch.jpg"
 
 // Software
+import SoftwareLanding from "./Software/Landing.jpg"
+
+import Cardin from "./Software/AppDev/cardin.jpg"
+
+import SoftwareAurafarm from "./Software/Embedded/Aurafarm.jpg"
+import DrakeLilYachty from "./Software/Embedded/drakelilyachty.jpg"
+
+import Kyle from "./Software/DAQ/kyle.jpg"
+
+
 
 export const ChassisImages = {
     Landing: ChassisLanding,
@@ -59,6 +73,10 @@ export const ChassisImages = {
     Aerodynamics: {
         HoldingWing,
         Backwing
+    },
+    Ergonomics: {
+        Jig,
+        Sanding: SandingErgo
     }
 };
 
@@ -107,5 +125,15 @@ export const PublicRelationsImages = {
 };
 
 export const SoftwareImages = {
-
+    Landing: SoftwareLanding,
+    AppDev: {
+        Cardin
+    },
+    Embedded: {
+        Aurafarm: SoftwareAurafarm,
+        Drake: DrakeLilYachty
+    },
+    DAQ: {
+        Kyle
+    }
 };

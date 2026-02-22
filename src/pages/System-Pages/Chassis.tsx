@@ -57,8 +57,8 @@ As a chassis team member, you'll weld tubular space frames that balance rigidity
             index="05"
             title="Ergonomics"
             description="The fastest car is useless if the driver can't operate it comfortably and efficiently. Our ergonomics team focuses on the human-machine interface, designing everything from seat positioning and pedal placement to steering wheel controls and driver visibility. Members conduct driver fit studies, create mockups to test different configurations, and optimize the cockpit layout to minimize driver fatigue while maximizing control and feedback. The work involves understanding human factors, anthropometric data, and the physical demands of racing, then translating those insights into practical design decisions. Creating an ergonomic cockpit means finding the balance between driver comfort, control accessibility, packaging constraints, and safety regulations while ensuring drivers of different sizes can operate the vehicle effectively."
-            images={[TempPicture, TempPicture, TempPicture]} 
-            layout={2}
+            images={[ChassisImages.Ergonomics.Sanding, ChassisImages.Ergonomics.Jig]} 
+            layout={4}
         />
     </div>
   );
