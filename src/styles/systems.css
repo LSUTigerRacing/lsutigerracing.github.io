@@ -193,6 +193,9 @@
     object-fit: cover;
 }
 
+.collage-1-single {
+    width: 100%;
+}
 
 .collage-1-single img {
     width: 100%;
