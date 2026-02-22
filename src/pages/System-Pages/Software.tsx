@@ -25,21 +25,21 @@ const Software = () => {
         <SubsystemComponent
             index="01"
             title="App Development"
-            description="Modern race teams need software tools that make information accessible and operations efficient. Our app development team builds applications that serve the team's needs, from documentation platforms and project management to financial operation workflows and sponsor engagement tools. Members gain experience with web development frameworks, user interface design, database management, and the full software development lifecycle from requirements gathering to deployment. The work involves identifying problems that software can solve, prototyping solutions, gathering feedback from team members, and iterating until the tools actually improve how we work."
+            description="Modern race teams need software tools that make information accessible and operations efficient. Our app development team builds applications that serve the team's needs, from pit crew timing systems and parts inventory management to driver telemetry displays and sponsor engagement platforms. Members gain experience with mobile and web development frameworks, user interface design, database management, and the full software development lifecycle from requirements gathering to deployment."
             images={[SoftwareImages.AppDev.Cardin]} 
             layout={7}
         />
         <SubsystemComponent
             index="02"
             title="Embedded Controls"
-            description="The race car's onboard computers need reliable code that runs in real-time under harsh conditions. Our embedded systems team develops firmware for microcontrollers that manage critical vehicle functions, from vehicle control unit logic to sensor data collection and driver display updates. Members work with C/C++ programming, real-time operating systems, communication protocols like CAN bus, and debugging techniques for hardware-software integration. The role involves writing efficient code that meets strict timing requirements, implementing safety-critical algorithms, and testing thoroughly because failures on track aren't an option. Success requires thinking about edge cases, managing limited computational resources, and understanding how software interacts with the physical world of sensors, actuators, and electrical systems."
+            description="The race car's onboard computers need reliable code that runs in real-time under harsh conditions. Our embedded systems team develops firmware for microcontrollers that manage critical vehicle functions, from motor control and battery management to sensor data collection and driver display updates. Members work with C/C++ programming, real-time operating systems, communication protocols like CAN bus, and debugging techniques for hardware-software integration."
             images={[SoftwareImages.Embedded.Aurafarm, SoftwareImages.Embedded.Drake]} 
             layout={4}
         />
         <SubsystemComponent
             index="03"
             title="Data Analysis"
-            description="Every lap generates thousands of data points, and turning that information into faster lap times requires systematic analysis. Our data acquisition team develops the systems that log vehicle performance data and creates the analysis tools that reveal what's actually happening on track. Members gain experience with sensor integration, data logging systems, signal processing, visualization techniques, and statistical analysis methods that identify trends and anomalies. The work involves configuring data acquisition hardware, writing scripts to process and visualize telemetry, comparing driver inputs to vehicle responses, and presenting findings that help engineers make informed setup changes. Understanding what the data reveals about suspension behavior, power delivery, braking performance, and driver technique turns raw numbers into actionable improvements."
+            description="Every lap generates thousands of data points, and turning that information into faster lap times requires systematic analysis. Our data acquisition team develops the systems that log vehicle performance data and creates the analysis tools that reveal what's actually happening on track. Members gain experience with sensor integration, data logging systems, signal processing, visualization techniques, and statistical analysis methods that identify trends and anomalies."
             images={[SoftwareImages.DAQ.Kyle]} 
             layout={7}
         />

@@ -22,14 +22,14 @@ const Business = () => {
         <SubsystemComponent
             index="01"
             title="Finance"
-            description="Running a competitive race team requires smart financial management and strategic resource allocation. Our financial team oversees the team's budget, tracks expenditures across all subsystems, and develops funding strategies that keep the program sustainable year after year. Members gain practical experience with financial forecasting, cost-benefit analysis, purchase order management, and the accounting systems that ensure every dollar is spent effectively. The role involves working closely with team leadership to prioritize investments, negotiate pricing with suppliers, and prepare financial reports for stakeholders. Understanding how to balance ambitious technical goals with fiscal responsibility is critical, as smart financial decisions directly enable the innovations that make our car competitive."
+            description="Running a competitive race team requires smart financial management and strategic resource allocation. Our financial team oversees the team's budget, tracks expenditures across all subsystems, and develops funding strategies that keep the program sustainable year after year. Members gain practical experience with financial forecasting, cost-benefit analysis, purchase order management, and the accounting systems that ensure every dollar is spent effectively."
             images={[BusinessImages.Finance.Financial]} 
             layout={7}
         />
         <SubsystemComponent
             index="02"
             title="Sponsor Relations"
-            description="Building and maintaining partnerships with companies and organizations is what makes our team possible. Our sponsor relations team cultivates relationships with current sponsors, identifies and pursues new partnership opportunities, and ensures sponsors receive value from their investment in our program. Members develop skills in professional communication, proposal writing, presentation delivery, and relationship management that extend far beyond the classroom. The work involves researching potential sponsors, crafting compelling pitches that align our team's goals with their interests, coordinating sponsor events and facility tours, and creating reports that demonstrate the impact of their support. Success in this role requires understanding what different organizations value and translating our team's achievements into meaningful partnerships."
+            description="Building and maintaining partnerships with companies and organizations is what makes our team possible. Our sponsor relations team cultivates relationships with current sponsors, identifies and pursues new partnership opportunities, and ensures sponsors receive value from their investment in our program. Members develop skills in professional communication, proposal writing, presentation delivery, and relationship management that extend far beyond the classroom."
             images={[BusinessImages.SponsorRelations.BASF]} 
             layout={7}
         />
