@@ -48,7 +48,12 @@ const LandingComponent = ( props: { name: any; blurb: any; image: any } ) => {
                 </p>
 
                 <div className="default-vis yellow-button mt-6">
-                    <h3>Interest Form</h3>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
+                        target="_blank"
+                    >
+                        <h3>Interest Form</h3>
+
+                    </a>
                 </div>
   
                 <div className="absolute bottom-0 w-fit h-fit flex items-center gap-4 default-vis">
@@ -67,7 +72,12 @@ const LandingComponent = ( props: { name: any; blurb: any; image: any } ) => {
 
             <div className="mobile-flex-vis w-full items-center justify-between gap-6 mt-4 relative">
                 <div className="subsystem-mobile-hide yellow-button">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
+                        target="_blank"
+                    >
                     <h3>Interest Form</h3>
+
+                    </a>
                 </div>
                 <div></div> {/* empty div to force proper space of the explore __ on mobile */}
                 <div className="w-fit h-fit py-3 flex items-center text-right gap-4">
