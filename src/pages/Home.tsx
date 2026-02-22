@@ -77,6 +77,7 @@ const Home = () => {
 		<div className="background">
 			<div className="flex-center relative w-screen h-screen overflow-hidden">
 				{/* Background Image */}
+				{/* WARNING: discord embed of this website relies on this image; if you change this image out in the future, make sure to update index.html too. */}
 				<img
 					src={Landing}
 					alt="Racing car"
