@@ -44,9 +44,11 @@ const Cars = () => {
 				</div>
 
 				<p id="landing-blurb">
-					From concept to competition, every TigerRacing vehicle represents countless hours of student innovation, engineering excellence, and hands-on learning. Our cars showcase our evolution as a team, from our early combustion designs to our venture into electric vehicles that compete on tracks across the country. Each car tells a story of problem-solving, collaboration, and the relentless pursuit of performance. 
+					From concept to competition, every TigerRacing vehicle represents countless hours of student innovation, engineering excellence, and hands-on learning. Our cars showcase our evolution as a team, from our early combustion designs to our venture into electric vehicles that compete on tracks across the country.
 					<br/><br/>
 					Explore our legacy of racing machines and see how LSU engineering students transform classroom knowledge into championship-caliber race cars.
+									<br/><br/>
+					<strong>Click on the car images to learn more!</strong>
 				</p>
 
 				<div className="absolute bottom-0 w-fit h-fit flex items-center gap-4 default-vis">

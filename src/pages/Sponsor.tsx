@@ -76,11 +76,11 @@ const Sponsor = () => {
             <div className='sponsor-why-partner-blurb'>
                 <h2 className="mb-5">Why partner with us?</h2>
                 <p>
-                    External sponsors account for 95% of our team’s annual budget. Contributions towards our team allow us to continue representing LSU on an international stage, as well as giving back to our local community. 
+                    External sponsors account for 95% of our team's annual budget. Contributions towards our team allow us to continue representing LSU on an international stage, as well as giving back to our local community.
                     <br/> <br/>
-                    Your business will gain brand exposure via our 5000+ social media followers, and access our network of university connections. By partnering with us, you invest in the next generation of engineers and gain access to our exclusive resume booklet of our top engineering talent.
+                    Your business will gain brand exposure via our <strong>5500+ </strong>social media followers, and access our network of university connections. By partnering with us, you invest in the next generation of engineers and gain access to our exclusive resume booklet of our top engineering talent.
                     <br/> <br/>
-                    TigerRacing is a registered 501(c)(3) non-profit organization. Any and all donations are considered tax-deductible.
+                    <strong>TigerRacing is a registered 501(c)(3) non-profit organization. Any and all donations are considered tax-deductible.</strong>
                 </p>
             </div>
             <div className="sponsor-stats flex flex-col justify-between">

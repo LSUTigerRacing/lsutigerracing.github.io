@@ -95,10 +95,10 @@ const Join = () => {
                 <h2 className="seperator-bottom-sm">Why Join?</h2>
                 <p>We welcome LSU students of all majors and experience levels who share our passion for pushing the boundaries of electric vehicle technology. Whether you're a freshman with zero experience or a senior looking to apply your knowledge, there's a place for you on our team.
                 <br/><br/>
-                FSAE offers hands-on experience you simply can't get in the classroom. You'll gain practical skills in areas like PCB design that aren't part of LSU's standard curriculum but are highly valued skills in the industry. From CAD modeling and finite element analysis to battery management systems and motor controller programming, you'll work with the same tools and technologies used by leading companies like Tesla, Rivian, and Formula 1 teams.
+                FSAE offers hands-on experience you simply can't get in the classroom. You'll gain practical skills in areas like <strong>PCB design </strong>that aren't part of LSU's standard curriculum but are highly valued skills in the industry. From <strong>CAD modeling and finite element analysis </strong>to battery management systems and motor controller programming, you'll work with the same tools and technologies used by leading companies like Tesla, Rivian, and Formula 1 teams.
                 <br/><br/>
 
-                Our alumni have gone on to positions at top engineering firms, and recruiters actively seek out FSAE members for their proven ability to deliver real results under pressure. 
+                Our alumni have gone on to positions at top engineering firms, and <strong>recruiters actively seek out FSAE members</strong> for their proven ability to deliver real results under pressure. 
                 <br/><br/>
                 </p>
             </div>
@@ -163,7 +163,7 @@ const Join = () => {
                 <SystemBox
                     to="/join/public-relations"
                     title="Public Relations"
-                    description="Our public relations system builds our brand and community through marketing campaigns and fundraising initiatives. If you enjoy content creation, event planning, social media strategy, or connecting people to our mission, Public Relations is for you"
+                    description="Our public relations system builds our brand and community through marketing campaigns and fundraising initiatives. If you enjoy content creation, event planning, social media strategy, or connecting people to our mission, Public Relations is for you."
                 />
             </div>
         </section>
@@ -174,7 +174,7 @@ const Join = () => {
 export default Join;
 
 
-const SystemBox = ( props: { to: any; title: any; description: any; } ) => {
+const SystemBox = ( props: { to: string; title: string; description: string; } ) => {
     const {
         to,
         title,
