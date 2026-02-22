@@ -1515,7 +1515,7 @@ html {
 }
 .team-landing {
     width: var(--default-width);
-    padding-block: 16vh;
+    padding-block: 15vh;
     margin-inline: auto;
 }
 

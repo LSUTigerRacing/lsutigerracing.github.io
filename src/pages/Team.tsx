@@ -301,7 +301,7 @@ const Redirect = ( props: { to: any; image: any; title: any; description: any; }
                     />
                 </div>
             </Link>
-            <p>{description}</p>
+            <p className="text-[0.8rem]">{description}</p>
         </div>
     )
 }
