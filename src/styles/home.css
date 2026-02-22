@@ -168,15 +168,28 @@
     gap: 1.25rem;
 }
 
-@media (max-width: 600px) {
+.home-competition-big-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
     .home-competition-section {
         height: fit-content;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+        display: flex;
+        flex-direction: column;
     }
 
     .home-competition-big-image {
+        height: 42rem;
         grid-column: span 2;
     }
+}
+
+.home-competition-content {
+    grid-column: span 2;
 }
 
 .home-competition-column {

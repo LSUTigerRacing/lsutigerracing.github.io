@@ -171,38 +171,48 @@ const Home = () => {
 				<section className='home-competition-section'>
 					<img
 						src={Tilt}
-						className='w-full h-full object-cover home-competition-big-image'
+						className='home-competition-big-image'
 						id='home-competition-image'
 					/>
-					<div className='home-competition-column'>
-						<span>
+					<div className='home-competition-content flex flex-col'>
+						<div className='pb-3 max-w-[48%]'>
 							<h3>Where Theory Meets Reality</h3>
-							<br/>
-							<p>
-								Every year, we compete at Formula SAE Electric events against top engineering programs from around the world. The competition tests every aspect of our car through dynamic events like acceleration, autocross, and endurance, plus static events where we defend our design choices to industry judges.
-							</p>
-						</span>
-						<img
-							src={Judge}
-							className='w-full object-cover'
-							id='home-competition-image'
-						/>
+						</div>
+						<div className='flex flex-col justify-between gap-4 flex-1'>
+							<div className='flex gap-8'>
+								<div className='flex-1'>
+									<p>
+										Every year, we compete at Formula SAE Electric events against top engineering programs from around the world. The competition tests every aspect of our car through dynamic events like acceleration, autocross, and endurance, plus static events where we defend our design choices to industry judges.
+									</p>
+								</div>
+								<div className='flex-1'>
+									<p>
+										These competitions push us to our limits. Track time reveals what works and what needs improvement. Judge feedback challenges our assumptions. Every event teaches us something new about engineering, teamwork, and what it takes to build a winning vehicle.
+									</p>
+								</div>
+							</div>
+
+							<div className='flex gap-8 min-h-[50%]'>
+								<div className='flex-1'>
+									<img
+										src={Judge}
+										className='w-full h-full object-cover'
+										id='home-competition-image'
+									/>
+								</div>
+								<div className='flex-1'>
+									<img
+										src={Run}
+										className='w-full h-full object-cover'
+										id='home-competition-image'
+									/>
+								</div>
+							</div>
+						</div>
+
+						
 					</div>
-					<div className='home-competition-column'>
-						<span>
-							<h3 className='whitespace-break-spaces'>
-								⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-								⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</h3> {/* ascii blank char for formatting */}
-							<br/>
-							<p>
-								These competitions push us to our limits. Track time reveals what works and what needs improvement. Judge feedback challenges our assumptions. Every event teaches us something new about engineering, teamwork, and what it takes to build a winning vehicle.
-							</p>
-						</span>
-						<img
-							src={Run}
-							id='home-competition-image'
-						/>
-					</div>
+
 				</section>
 
 			<div className='home-end-section'>
