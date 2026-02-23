@@ -144,8 +144,8 @@ const Join = () => {
         </div>
 
         <div className="white-line mt-6 mb-20"/>
-        <section className="w-[90%] mx-auto">
-            <h2>Our Systems</h2>
+        <section className="w-[90%] mx-auto pb-10">
+            <h2 className="mb-6">Our Systems</h2>
 
             <div className="systems-container">
                 <SystemBox
@@ -175,6 +175,34 @@ const Join = () => {
                 />
             </div>
         </section>
+        {/* <section className="background">
+            <h2>How do I Join?</h2>
+            <section className="w-[80%] flex mx-auto justify-between gap-16">
+                <div className="flex-1 flex items-center justify-start gap-8">
+                    <h2>1</h2>
+                    <p>Sign up on the interest form!</p>
+                </div>
+                <div className="flex-1 flex flex-col">
+                    <img
+                        src={Collage_1}
+                    />
+                <div className="flex-1 flex items-center justify-start gap-6">
+                    <h2>2</h2>
+                    <p>Follow us on Instagram!</p>
+                </div>
+                <div className="flex-1 flex flex-col">
+                    <img
+                        src={Collage_1}
+                    />
+                    <div className="flex items-center justify-start gap-6">
+                        <h2>3</h2>
+                        <p>Show up to a meeting! (Check IG)</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </section> */}
     </div>
   );
 };

@@ -70,6 +70,7 @@
 .systems-container {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
+	gap: 1rem;
 }
 
 
@@ -112,7 +113,7 @@
 .join-systems-box {
 	flex: 1;
 	
-	margin: 1rem;
+	/* margin: 1rem; */
 	padding: 1.5rem;
 
 	border-color: var(--standard-purple);
