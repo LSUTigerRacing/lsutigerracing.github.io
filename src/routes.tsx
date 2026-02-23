@@ -3,46 +3,44 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom"
 import { Navbar } from "./components/Navbar.tsx"
 import Footer from "./components/Footer"
 // Public pages
-const Home = lazy(() => import('./pages/Home'))
-const Team = lazy(() => import('./pages/Team'))
-const Join = lazy(() => import('./pages/Join'))
-const Sponsor = lazy(() => import('./pages/Sponsor'))
-const Cars = lazy(() => import('./pages/Cars'))
-const CarPage = lazy(() => import('./pages/CarPage'))
+import Home from './pages/Home'
+import Team from './pages/Team'
+import Join from './pages/Join'
+import Sponsor from './pages/Sponsor'
+import Cars from './pages/Cars'
+import CarPage from './pages/CarPage'
 
-const Chassis = lazy(() => import('./pages/System-Pages/Chassis'))
-const Powertrain = lazy(() => import('./pages/System-Pages/Powertrain'))
-const Business = lazy(() => import('./pages/System-Pages/Business'))
-const PublicRelations = lazy(() => import('./pages/System-Pages/PublicRelations'))
-const Software = lazy(() => import('./pages/System-Pages/Software'))
+import Chassis from './pages/System-Pages/Chassis'
+import Powertrain from './pages/System-Pages/Powertrain'
+import Business from './pages/System-Pages/Business'
+import PublicRelations from './pages/System-Pages/PublicRelations'
+import Software from './pages/System-Pages/Software'
 
 
 export const AppRoutes = () => {    
     return (
         <>
             <Navbar />
-            <Suspense fallback={null}>
-                    <Routes>
-                        {/* public pages */}
-                        <Route path="/" element={<Home />} />
-                        <Route path="/team" element={<Team />} />
-                        <Route path="/cars" element={<Cars />}/> 
-                        <Route path="/cars/:year" element={<CarPage />}/> 
+                <Routes>
+                    {/* public pages */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/team" element={<Team />} />
+                    <Route path="/cars" element={<Cars />}/> 
+                    <Route path="/cars/:year" element={<CarPage />}/> 
 
-                        <Route path="/sponsor" element={<Sponsor />} />
-                        <Route path="/join" element={<Join />}/> 
+                    <Route path="/sponsor" element={<Sponsor />} />
+                    <Route path="/join" element={<Join />}/> 
 
-                        {/* subpages */}
-                        <Route path="/join/chassis" element={<Chassis />}/>
-                        <Route path="/join/powertrain" element={<Powertrain />}/>
-                        <Route path="/join/business" element={<Business />}/>
-                        <Route path="/join/public-relations" element={<PublicRelations />}/>
-                        <Route path="/join/software" element={<Software />}/>
+                    {/* subpages */}
+                    <Route path="/join/chassis" element={<Chassis />}/>
+                    <Route path="/join/powertrain" element={<Powertrain />}/>
+                    <Route path="/join/business" element={<Business />}/>
+                    <Route path="/join/public-relations" element={<PublicRelations />}/>
+                    <Route path="/join/software" element={<Software />}/>
 
-                        {/* the else statement (wow) */}
-                        <Route path="*" element={<Navigate to="/" replace/>}/>
-                    </Routes>
-            </Suspense>   
+                    {/* the else statement (wow) */}
+                    <Route path="*" element={<Navigate to="/" replace/>}/>
+                </Routes>
             <Footer/>
         </>
     )
