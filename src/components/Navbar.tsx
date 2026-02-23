@@ -6,7 +6,10 @@ import { Link, useLocation } from "react-router-dom";
 
 import { useState, useEffect, useRef } from "react";
 
-import Logo from "../assets/images/General/tigerracing-logo-purple.png";
+import Logo from "../assets/images/General/navmenu-logo.png";
+// import Logo from "../assets/images/General/tigerracing-logo-purple.png";
+// import Logo from "../assets/images/General/file.svg";
+
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
