@@ -6,16 +6,16 @@ import { ScrollTrigger } from 'gsap/all';
 
 import { AdminImages, ChassisImages, PowertrainImages, SoftwareImages } from "../assets/images/Team";
 
-import SystemChassis from "../assets/images/Team/SystemChassis.png";
-import SystemPowertrain from "../assets/images/Team/SystemPowertrain.png";
-import SystemBusiness from "../assets/images/Team/SystemBusiness.png";
-import SystemPublicRelations from "../assets/images/Team/SystemPublicRelations.png";
-import SystemSoftware from "../assets/images/Team/SystemSoftware.png";
+import SystemChassis from "../assets/images/Team/SystemChassis.jpg";
+import SystemPowertrain from "../assets/images/Team/SystemPowertrain.jpg";
+import SystemBusiness from "../assets/images/Team/SystemBusiness.jpg";
+import SystemPublicRelations from "../assets/images/Team/SystemPublicRelations.jpg";
+import SystemSoftware from "../assets/images/Team/SystemSoftware.jpg";
+
 import DownArrow from "../assets/images/General/BIG-DOWN-ARROW.png"
 
 import Linkedin from "../assets/images/General/icons/linkedin.png"
 import Mail from "../assets/images/General/icons/mail.png"
-
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 

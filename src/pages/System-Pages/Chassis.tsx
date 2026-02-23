@@ -1,5 +1,4 @@
-import Landing from "../../assets/images/System-Pages/Chassis/Landing.png";
-import TempPicture from "../../assets/images/System-Pages/Powertrain/PCB.png";
+import Landing from "../../assets/images/System-Pages/Chassis/Landing.jpg";
 
 import { ChassisImages } from "../../assets/images/System-Pages/index"
 

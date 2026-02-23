@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom';
 import Landing from "../assets/images/Home/Landing.jpg";
 import Hero from "../assets/images/Home/Hero.jpg";
 
-import About from "../assets/images/Home/About.png";
-import Join from "../assets/images/Home/Join.png";
-import Sponsor from "../assets/images/Home/Sponsor.png";
+import About from "../assets/images/Home/About.jpg";
+import Join from "../assets/images/Home/Join.jpg";
+import Sponsor from "../assets/images/Home/Sponsor.jpg";
 
 // Carousel
-import Tilt from "../assets/images/Home/Carousel/Tilt.png"
-import Judge from "../assets/images/Home/Carousel/Judge.png"
-import Run from "../assets/images/Home/Carousel/Run.png"
+import Tilt from "../assets/images/Home/Carousel/Tilt.jpg"
+import Judge from "../assets/images/Home/Carousel/Judge.jpg"
+import Run from "../assets/images/Home/Carousel/Run.jpg"
 
 // Sponsors
 import BASF from "../assets/images/Home/Sponsor-Icons/BASF.png"
