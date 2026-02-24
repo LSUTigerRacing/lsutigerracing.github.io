@@ -56,7 +56,6 @@ const Sponsor = () => {
                 <div className="default-vis yellow-button white-landing-button mt-6">
                     <a href={SponsorshipPacket} target='_blank'>
                         <h3>Sponsorship Packet</h3>
-                        
                     </a>
                 </div>
             </div>
@@ -64,6 +63,8 @@ const Sponsor = () => {
                 <img
                     src={Landing}
                     id="landing-img"
+                    alt="TigerRacing Outreach"
+                    fetchPriority="high"
                 />
             </div>
             <div className="mobile-vis yellow-button sponsor-button white-landing-button mt-3">

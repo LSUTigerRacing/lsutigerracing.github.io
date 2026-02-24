@@ -55,13 +55,19 @@ const Cars = () => {
 					<div className="w-fit">
 						<h3 className="whitespace-nowrap text-[1.rem]">Explore Our Past</h3>
 					</div>
-					<img className="w-[3rem] arrow-icon" src={DownArrow}/>
+					<img 
+						className="w-[3rem] arrow-icon" 
+						src={DownArrow}
+						alt="Down Arrow"
+					/>
 				</div>
 			</div>
 			<div className="white-landing-img-container">
 				<img
 					src={LandingICImages.Landing2015}
 					id="landing-img"
+					alt="Cars Page Landing"
+					fetchPriority="high"
 				/>
 			</div>
 			<div className="mobile-flex-vis w-full items-center justify-between gap-6 mt-4 relative">
@@ -69,7 +75,11 @@ const Cars = () => {
 						<div className="w-fit">
 							<h3 className="whitespace-nowrap text-[1.rem]">Explore Our Past</h3>
 						</div>
-					<img className="w-[3rem] arrow-icon" src={DownArrow}/>
+					<img 
+						className="w-[3rem] arrow-icon" 
+						src={DownArrow}
+						alt='Down Arrow'
+					/>
 				</div>
 			</div>
 		</section>
@@ -229,7 +239,10 @@ const CarBox = ( props: { name: any, year: any, type: any, image: any } ) => {
     
     return ( 
         <Link to={`/cars/${year}`} className="car-box">
-			<img src={image} alt={`${year} car`} />
+			<img 
+				src={image} 
+				alt={`${year} car`} 
+			/>
 			<div className="car-overlay">
 				<div className="w-[var(--default-width)] mx-auto mb-3 flex justify-between">
 					<span>

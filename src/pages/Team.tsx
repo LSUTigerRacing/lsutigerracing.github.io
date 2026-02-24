@@ -88,6 +88,7 @@ const Team = () => {
                 <img
                     src={DownArrow}
                     className="w-[10%]"
+                    alt="Down Arrow"
                 />
             </div>
         </section>
@@ -321,6 +322,7 @@ const Portrait = ( props: { to: any; email: any; image: any; title: any; name: a
                 src={image}
                 alt={title}
                 className="portrait-image"
+                fetchPriority="high"
             />
             <div className="portrait-lining">
                 <div className="portrait-content">
@@ -333,10 +335,16 @@ const Portrait = ( props: { to: any; email: any; image: any; title: any; name: a
                     <h3>Contact</h3>
                     <div className="flex flex-row gap-2">
                         <a className={`${email === "none" ? 'hidden' : ''}`} href={`mailto:${email}`} target="_blank">
-                            <img src={Mail}/>
+                            <img 
+                                src={Mail}
+                                alt="Mail Icon"
+                            />
                         </a>
                         <a className={`${to === "none" ? 'hidden' : ''}`} href={to} target="_blank">
-                            <img src={Linkedin}/>
+                            <img 
+                                src={Linkedin}
+                                alt="Linkedin Icon"
+                            />
                         </a>
                     </div>
 

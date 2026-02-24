@@ -48,11 +48,11 @@ const LandingComponent = ( props: { name: any; blurb: any; image: any } ) => {
                 </p>
 
                 <div className="default-vis yellow-button mt-6">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
+                    <a 
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
                         target="_blank"
                     >
                         <h3>Interest Form</h3>
-
                     </a>
                 </div>
   
@@ -67,16 +67,18 @@ const LandingComponent = ( props: { name: any; blurb: any; image: any } ) => {
                 <img
                     src={image}
                     id="landing-img"
+                    alt={`${name} Landing Image`}
+                    fetchPriority="high"
                 />
             </div>
 
             <div className="mobile-flex-vis w-full items-center justify-between gap-6 mt-4 relative">
                 <div className="subsystem-mobile-hide yellow-button">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
+                    <a 
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
                         target="_blank"
                     >
                     <h3>Interest Form</h3>
-
                     </a>
                 </div>
                 <div></div> {/* empty div to force proper space of the explore __ on mobile */}

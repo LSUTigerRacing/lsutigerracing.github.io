@@ -34,7 +34,11 @@ const CarPage = () => {
 	return (
 		<div className="w-full background bg-white!">
 			<div className="car-single-landing">
-				<img src={carData.landingPhoto || carData.carPhoto} alt={`${year} car`} />
+				<img 
+					src={carData.landingPhoto || carData.carPhoto} 
+					alt={`${year} car`} 
+					fetchPriority="high"
+				/>
 				<div className="car-overlay">
 					<div className="car-page-landing-content">
 						<span className="mb-16" id="landing-text">
@@ -68,7 +72,11 @@ const CarPage = () => {
 				</div>
 			</div>
 
-			<img className={`${carData.teamPhoto? "" : "hidden"} car-page-team-photo`} src={carData.teamPhoto}/>
+			<img 
+				className={`${carData.teamPhoto? "" : "hidden"} car-page-team-photo`} 
+				src={carData.teamPhoto}
+				alt={`${carData.year}'s Car`}
+			/>
 			
 			{/* LAYOUT 2 team leads */}
 			<div className={`${(carData.layout === 2) ? "" : "hidden"}`}>
@@ -95,6 +103,7 @@ const CarPage = () => {
 							<div key={idx} className='w-full h-fit'>
 								<img
 									src={member.image}
+									alt={`${member.name}'s Portrait`}
 									className="w-full h-full object-cover"
 								/>
 								<h3 className="text-black text-[1.3rem] text-center">{member.name}{member.role ? `,` : ""} {member.role}</h3>

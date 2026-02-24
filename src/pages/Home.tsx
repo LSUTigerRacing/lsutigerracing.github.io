@@ -82,6 +82,7 @@ const Home = () => {
 					src={Landing}
 					alt="Racing car"
 					className="absolute inset-0 w-full h-full object-cover"
+					fetchPriority="high"
 				/>
 				
 				{/* Gradient Overlay */}
@@ -108,14 +109,54 @@ const Home = () => {
 			</div>
 			<div className='home-sponsor-bar-container'>
 				<div className='home-sponsor-bar'>
-					<div className='sponsor-logo'><img src={BASF}/></div>
-					<div className='sponsor-logo'><img src={Exxon}/></div>
-					<div className='sponsor-logo'><img src={Haas}/></div>
-					<div className='sponsor-logo'><img src={Hoosier}/></div>
-					<div className='sponsor-logo'><img src={Kenesto}/></div>
-					<div className='sponsor-logo'><img src={LSUEngineering}/></div>
-					<div className='sponsor-logo'><img src={Siemens}/></div>
-					<div className='sponsor-logo'><img src={Solidworks}/></div>
+					<div className='sponsor-logo'>
+						<img 
+							src={BASF}
+							alt='BASF'
+						/>
+					</div>
+					<div className='sponsor-logo'>
+						<img 
+							src={Exxon}
+							alt="Exxon"
+						/>
+					</div>
+					<div className='sponsor-logo'>
+						<img 
+							src={Haas}
+							alt="Haas"
+						/>
+					</div>
+					<div className='sponsor-logo'>
+						<img
+							src={Hoosier}
+							alt="Hoosier"
+						/>
+					</div>
+					<div className='sponsor-logo'>
+						<img 
+							src={Kenesto}
+							alt="Kenesto"
+						/>
+					</div>
+					<div className='sponsor-logo'>
+						<img
+							src={LSUEngineering}
+							alt="LSU College of Engineering"
+						/>
+					</div>
+					<div className='sponsor-logo'>
+						<img 
+							src={Siemens}
+							alt="Siemens"
+							/>
+					</div>
+					<div className='sponsor-logo'>
+						<img 
+							src={Solidworks}
+							alt="Solidworks"
+						/>
+					</div>
 				</div>
 			</div>
 
@@ -173,6 +214,7 @@ const Home = () => {
 					<img
 						src={Tilt}
 						className='home-competition-big-image'
+						alt="Tilt Test"
 						id='home-competition-image'
 					/>
 					<div className='home-competition-content flex flex-col'>
@@ -198,6 +240,7 @@ const Home = () => {
 									<img
 										src={Judge}
 										className='w-full h-full object-cover'
+										alt="Judging at Competition"
 										id='home-competition-image'
 									/>
 								</div>
@@ -205,6 +248,7 @@ const Home = () => {
 									<img
 										src={Run}
 										className='w-full h-full object-cover'
+										alt="Car Driving"
 										id='home-competition-image'
 									/>
 								</div>
