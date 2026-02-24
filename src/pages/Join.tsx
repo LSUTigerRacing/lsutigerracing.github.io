@@ -79,11 +79,11 @@ const Join = () => {
 
   return (
     <div className="w-full background text-black! bg-white!">
-        <SEO
+        {/* <SEO
             title="TigerRacing | Join Us"
             description="We welcome LSU students of all majors and experience levels who share our passion for pushing the boundaries of electric vehicle technology. Whether you're a freshman with zero experience or a senior looking to apply your knowledge, there's a place for you on our team."
             url="https://www.formulalsu.org/join"
-        />
+        /> */}
 
         <section className="purple-landing flex-col! justify-normal! gap-8" ref={landingRef}>
             <div className="max-w-[80%] max-[475px]:max-w-[var(--default-width)] text-center mx-auto" id="join-landing-phrase">
