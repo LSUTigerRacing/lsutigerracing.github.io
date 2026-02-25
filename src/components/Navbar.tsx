@@ -103,7 +103,7 @@ export const Navbar = () => {
                     </div>
 
                     <div className="flex flex-row gap-4">
-                        <a className="navbar-vis text-(--standard-purple) border-1 border-[var(--standard-purple)] rounded-4xl px-4 py-2 ml-4"
+                        <a className="navbar-vis text-(--standard-purple) border-1 border-[var(--standard-purple)] rounded-4xl px-4 py-[0.38rem] ml-4"
                             href={'https://app.formulalsu.org'}
                             target='_blank'
                         >
