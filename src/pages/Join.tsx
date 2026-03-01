@@ -92,7 +92,11 @@ const Join = () => {
             </div>
 
             <div className="yellow-button text-black mx-auto">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog" target="_blank">
+                <a 
+                    href="https://forms.gle/CyRrWsUusvVLZGCeA"
+                    target="_blank"
+                >
+
                     <h3>Interest Form</h3>
                 </a>
             </div>

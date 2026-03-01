@@ -49,7 +49,7 @@ const LandingComponent = ( props: { name: any; blurb: any; image: any } ) => {
 
                 <div className="default-vis yellow-button mt-6">
                     <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
+                        href="https://forms.gle/CyRrWsUusvVLZGCeA"
                         target="_blank"
                     >
                         <h3>Interest Form</h3>
@@ -75,7 +75,7 @@ const LandingComponent = ( props: { name: any; blurb: any; image: any } ) => {
             <div className="mobile-flex-vis w-full items-center justify-between gap-6 mt-4 relative">
                 <div className="subsystem-mobile-hide yellow-button">
                     <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScP9bap9n6vUjAVLl0AMzkt6KXd2pU5JLpFXTteolTxK2F_eQ/viewform?usp=dialog"
+                        href="https://forms.gle/CyRrWsUusvVLZGCeA"
                         target="_blank"
                     >
                     <h3>Interest Form</h3>
