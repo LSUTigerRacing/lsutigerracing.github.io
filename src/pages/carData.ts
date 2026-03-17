@@ -40,7 +40,7 @@ export const carsData: Record<string, CarData> = {
             { role: "Public Relations Manager", name: "Gregory Gilmore", image: null }                    
         ],
         teamMembers: [
-            "Vinh Le", "Sammy Ziegler", "Mackenzie McLeod", "Thomas Au", "Mizuki Teruyama", "Tristan Thai", "Gavin Morris", "Evan Kerr", "Brady Vidrine", "Jadon Yeboah", "Andrew Nguyen", "Quentin Saba", "David Kitching", "Daniel Whitley", "Gareth Oram", "Ricky Liang", "Gregory Gilmore", "Luka Brekalo", "James Sirois", "Matthew Robert"
+            "Vinh Le", "Sammy Ziegler", "Mackenzie McLeod", "Thomas Au", "Mizuki Teruyama", "Tristan Thai", "Gavin Morris", "Evan Kerr", "Brady Vidrine", "Jadon Yeboah", "Andrew Nguyen", "Quentin Saba", "David Kitching", "Daniel Whitley", "Gareth Oram", "Ricky Liang", "Gregory Gilmore", "Luka Brekalo", "James Sirois", "Matthew Robert", "Urwah Abbas"
         ],
         layout: 2
     },
@@ -63,7 +63,7 @@ export const carsData: Record<string, CarData> = {
             { role: "Public Relations Manager", name: "Mia Arizmendi", image: null }                    
         ],
         teamMembers: [
-            "Amer Algalban", "Mia Arizmendi", "Bryce Boada", "Faniw Boone", "Josh Brooks", "Victoria Byrd", "Timmy Capdeboscq", "Kevin Cruz", "Holden David", "Justin Fields"
+            "Amer Algalban", "Bryce Boada", "Faniw Boone", "Josh Brooks", "Victoria Byrd", "Timmy Capdeboscq", "Kevin Cruz", "Gareth Oram", "Jadon Yeboah", "Justin Fields"
         ],
         layout: 2
     },
