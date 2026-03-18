@@ -68,7 +68,9 @@ const Sponsor = () => {
                 />
             </div>
             <div className="mobile-vis yellow-button sponsor-button white-landing-button mt-3">
-                <h3>Sponsorship Packet</h3>
+                <a href={SponsorshipPacket} target='_blank'>
+                    <h3>Sponsorship Packet</h3>
+                </a>
             </div>
 
         </section>
