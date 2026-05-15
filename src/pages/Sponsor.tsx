@@ -220,10 +220,16 @@ const Sponsor = () => {
 
             <section className='mt-10'>
                 <h3>Bronze</h3>
-                <div className='flex gap-16 flex-wrap '>
+                <div className='flex flex-wrap gap-16'>
                     <SponsorIcon
                         image={SponsorIcons.EssexParts}
                         to="https://www.essexparts.com"
+                    />
+                </div>
+                <div className='flex gap-16 flex-wrap '>
+                    <SponsorIcon
+                        image={SponsorIcons.FoxPestControl}
+                        to="https://fox-pest.com/locations/louisiana/baton-rouge/"
                     />
                 </div>
             </section>

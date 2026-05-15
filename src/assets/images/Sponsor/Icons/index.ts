@@ -5,6 +5,7 @@ import Collision from "./Collision.png"
 import CompositeEnvisions from "./CompositeEnvisions.png"
 import EssexParts from "./essexparts.png"
 import Exxon from "./Exxon_Mobil_Logo.png"
+import FoxPestControl from "./FoxPestControl.png"
 import Kenesto from "./Kenesto.png"
 import RockWest from "./Rockwest_Composites_Color_Stacked.png"
 import Solidworks from "./Solidworks.png"
@@ -18,6 +19,7 @@ export const SponsorIcons = {
     CompositeEnvisions: CompositeEnvisions,
     EssexParts: EssexParts,
     Exxon: Exxon,
+    FoxPestControl: FoxPestControl,
     Kenesto: Kenesto,
     RockWest: RockWest,
     Solidworks: Solidworks,

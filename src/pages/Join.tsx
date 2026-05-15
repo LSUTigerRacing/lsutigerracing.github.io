@@ -96,7 +96,6 @@ const Join = () => {
                     href="https://forms.gle/CyRrWsUusvVLZGCeA"
                     target="_blank"
                 >
-
                     <h3>Interest Form</h3>
                 </a>
             </div>
