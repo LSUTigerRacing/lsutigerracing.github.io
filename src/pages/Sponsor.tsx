@@ -180,6 +180,10 @@ const Sponsor = () => {
                         to="https://www.collision-solutions.com"
                     />
                     <SponsorIcon
+                        image={SponsorIcons.Ecotron}
+                        to="https://ecotron.ai"
+                    />
+                    <SponsorIcon
                         image={SponsorIcons.Kenesto}
                         to="https://www.kenesto.com"
                     />

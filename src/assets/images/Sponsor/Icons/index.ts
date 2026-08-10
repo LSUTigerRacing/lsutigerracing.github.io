@@ -3,6 +3,7 @@ import Acuity from "./Acuity.png"
 import BASF from "./BASF.png"
 import Collision from "./Collision.png"
 import CompositeEnvisions from "./CompositeEnvisions.png"
+import Ecotron from "./ecotron-white.png"
 import EssexParts from "./essexparts.png"
 import Exxon from "./Exxon_Mobil_Logo.png"
 import FoxPestControl from "./FoxPestControl.png"
@@ -17,6 +18,7 @@ export const SponsorIcons = {
     BASF: BASF,
     CollisionSolutions: Collision,
     CompositeEnvisions: CompositeEnvisions,
+    Ecotron: Ecotron,
     EssexParts: EssexParts,
     Exxon: Exxon,
     FoxPestControl: FoxPestControl,
