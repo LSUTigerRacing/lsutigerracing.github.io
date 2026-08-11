@@ -5,7 +5,8 @@ import { ScrollTrigger } from 'gsap/all';
 import Landing from "../assets/images/Sponsor/Landing.png";
 import WhyPartner from "../assets/images/Sponsor/WhyPartner.png";
 
-import SponsorshipPacket from "../assets/documents/Sponsorship-Packet-25-26.pdf"
+// import SponsorshipPacket from "../assets/documents/Sponsorship-Packet-25-26.pdf"
+import SponsorshipPacket from "../assets/documents/LSU_FSAE_Sponsorship_Packet_2027.pdf"
 
 import { ICImages } from "../assets/images/Cars/"
 import { SponsorIcons } from '../assets/images/Sponsor/Icons';
