@@ -19,7 +19,7 @@ import Run from "../assets/images/Home/Carousel/Run.jpg"
 
 // Sponsors
 import BASF from "../assets/images/Home/Sponsor-Icons/BASF.png"
-import Ecotron from "../assets/images/Home/Sponsor-Icons/ECOTRON.png"
+import Ecotron from "../assets/images/Home/Sponsor-Icons/Ecotron.png"
 import Exxon from "../assets/images/Home/Sponsor-Icons/Exxon.png"
 import Haas from "../assets/images/Home/Sponsor-Icons/Haas.png"
 import Hoosier from "../assets/images/Home/Sponsor-Icons/Hoosier.png"
