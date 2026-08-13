@@ -1,4 +1,5 @@
 // EV
+import Vera from "./Small/2026.jpg"
 import Evonne from "./Small/2025.jpg"
 import Eve from "./Small/2023.jpg"
 
@@ -36,6 +37,7 @@ import LandingIC2014 from "./Landing/2014.jpg"
 import LandingIC2013 from "./Landing/2013.jpg"
 
 export const EVImages = {
+    y2026: Vera,
     y2025: Evonne,
     y2023: Eve,
 };

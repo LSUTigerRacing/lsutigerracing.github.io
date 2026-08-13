@@ -21,6 +21,29 @@ interface CarData {
 }
 
 export const carsData: Record<string, CarData> = {
+    "2025-2026": {
+        year: "2025-2026",
+        name: "Vera",
+        carPhoto: EVImages.y2026,
+        specs: ["Power: 100 HP", "Motor: EMRAX 228 MV Axial Flux", "Motor Controller: DTI 500HV", "Max Voltage: 352V", "Max Current: 210A", "Tires: Hoosier R2O", "Wheels: 10 Keizer", "Data: AIM EVO5"],
+        performance: [
+            ["Results: Michigan", "Overall: 32nd/80", "Endurance: DNA", "Acceleration: 16/35", "Autocross: 18/38", "Skidpad: 18/38", "Design: 82/117", "Business: 30/117", "Cost: 28/117"]
+        ],   
+        teamPhoto: OldTeamImages.y2026,
+        teamLeads: [
+            { role: "Team Captain", name: "Gareth Oram", image: null },
+            { role: "President", name: "Mizuki Teruyama", image: null },
+            { role: "Vice President", name: "Urwah Abbas", image: null },
+            { role: "Treasurer", name: "Syph Guo", image: null },
+            { role: "Chassis Lead", name: "Tristan Thai", image: null },
+            { role: "Powertrain Lead", name: "Yianni Kiritsis", image: null },
+            { role: "Public Relations Manager", name: "Thomas Au", image: null }                    
+        ],
+        teamMembers: [
+            "Jadon Yeboah", "Aidan Rosson", "James Sirois", "Anthony Terry-Rojas", "Robert Gruse", "Luka Brekalo", "Vinh Le", "Ian Robertson", "Kelvin O'Young", "David Kitching", "Nick Fortie", "Andi Jane Smith", "Cohen Gros", "Emiliano Owsley", "Sammy Ziegler", "Andrew Nguyen", "Alex Bui", "Ryan Benn", "Octavio Combellas-Jaimes", "Ricky Liang", "Brandon Randle", "Christian Tran"
+        ],
+        layout: 2
+    },
     "2024-2025": {
         year: "2024-2025",
         name: "Evonne",

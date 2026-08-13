@@ -92,6 +92,12 @@ const Cars = () => {
 
 		<section className="car-grid">
 			<CarBox
+				name="Vera"
+				year="2025-2026"
+				type="EV"
+				image={EVImages.y2026}
+			/>
+			<CarBox
 				name="Evonne"
 				year="2024-2025"
 				type="EV"
