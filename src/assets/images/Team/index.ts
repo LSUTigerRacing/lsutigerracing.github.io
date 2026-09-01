@@ -7,6 +7,7 @@ import Captain from "./Admin/Captain.jpg"
 import Powertrain from "./Admin/Powertrain.jpg"
 import Chassis from "./Admin/Chassis.jpg"
 import Safety from "./Admin/Safety.jpg"
+import Education from "./Admin/Education.jpg"
 
 // Chassis
 import Frame from "./Chassis/Frame.jpg"
@@ -35,7 +36,8 @@ export const AdminImages = {
   Captain,
   Powertrain,
   Chassis,
-  Safety
+  Safety,
+  Education
 };
 
 export const ChassisImages = {

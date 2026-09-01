@@ -84,7 +84,7 @@ const Team = () => {
                 />
             </section>
             <div className="w-fit flex flex-col gap-3 mx-auto items-center">
-                <h2>Meet the 2026 Team</h2>
+                <h2>Meet the 2027 Team</h2>
                 <img
                     src={DownArrow}
                     className="w-[10%]"
@@ -100,6 +100,69 @@ const Team = () => {
         <h2>Admin</h2>
             <div className="team-portrait-container">
                 <Portrait
+                    to="none"
+                    email="uabbas3@lsu.edu"
+                    image={AdminImages.President}
+                    title="President"
+                    name="Urwah Abbas"
+                />
+                <Portrait
+                    to="none"
+                    email="James.Sirois@lsu.edu"
+                    image={AdminImages.VicePresident}
+                    title="Vice President"
+                    name="James Sirois"
+                />
+                <Portrait
+                    to="https://www.linkedin.com/in/rickyxliang/"
+                    email="rliang4@lsu.edu"
+                    image={AdminImages.PublicRelations}
+                    title="Public Relations"
+                    name="Ricky Liang"
+                />
+                <Portrait
+                    to="https://www.linkedin.com/in/syphany-guo-3773b82b6/"
+                    email="sguo15@lsu.edu"
+                    image={AdminImages.Treasurer}
+                    title="Treasurer"
+                    name="Octavio Combello-Jaimes"
+                />
+                <Portrait
+                    to="https://www.linkedin.com/in/tristan-thai/"
+                    email="tthai5@lsu.edu"
+                    image={AdminImages.Captain}
+                    title="Captain"
+                    name="Tristan Thai"
+                />
+                <Portrait
+                    to="https://www.linkedin.com/in/anthony-terry-rojas-71788b2b2/"
+                    email="aterr36@lsu.edu"
+                    image={AdminImages.Chassis}
+                    title="Chassis Lead"
+                    name="Anthony Terry-Rojas"
+                />
+                <Portrait
+                    to="https://www.linkedin.com/in/john-kiritsis/"
+                    email="jkirit1@lsu.edu"
+                    image={AdminImages.Powertrain}
+                    title="Powertrain Lead"
+                    name="Yianni Kiritsis"
+                />
+                <Portrait
+                    to="https://www.linkedin.com/in/luka-brekalo1/"
+                    email="lbreka1@lsu.edu"
+                    image={AdminImages.Safety}
+                    title="Safety Chair"
+                    name="Jered Perry"
+                />
+                <Portrait
+                    to="https://www.linkedin.com/in/gareth-oram-02470a22b/"
+                    email="goram1@lsu.edu"
+                    image={AdminImages.Education}
+                    title="Education Chair"
+                    name="Gareth Oram"
+                />
+                {/* <Portrait
                     to="none"
                     email="mteruy1@lsu.edu"
                     image={AdminImages.President}
@@ -154,13 +217,13 @@ const Team = () => {
                     image={AdminImages.Safety}
                     title="Safety Chair"
                     name="Luka Brekalo"
-                />
+                /> */}
             </div>
         </section>
 
         <div className="purple-line"/>
 
-        {/* chassis */}
+{/* 
         <section className="team-portrait-section">
         <h2>Chassis Leads</h2>
             <div className="team-portrait-container">
@@ -211,7 +274,6 @@ const Team = () => {
 
         <div className="purple-line"/>
 
-        {/* powertrain */}
         <section className="team-portrait-section">
         <h2>Powertrain Leads</h2>
             <div className="team-portrait-container">
@@ -247,7 +309,7 @@ const Team = () => {
         </section>
         <div className="purple-line"/>
 
-        {/* Software */}
+
         <section className="team-portrait-section">
         <h2>Software Leads</h2>
             <div className="team-portrait-container">
@@ -275,7 +337,7 @@ const Team = () => {
                 />
             </div>
         </section>
-
+ */}
     </div>
   );
 };
